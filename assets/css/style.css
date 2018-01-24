@@ -1,0 +1,106 @@
+/************************
+    Colors
+*************************/
+
+header {
+    background: white;
+}
+
+.content-wrap {
+    background: darkgrey;
+    height: 360px;
+}
+
+footer {
+    height: 60px;
+    background: grey;
+    border-top: 10px;
+    border-top-color: teal;
+    border-top-style: solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: teal;
+}
+
+
+/************************
+    Sizing
+*************************/
+
+footer,
+.content-wrap {
+    margin: 0;
+    width: auto;
+    padding: 15px;
+}
+
+header,
+section,
+.content {
+    margin: 0 auto;
+    width: 960px;
+}
+
+hr {
+    width: 95%;
+}
+
+section,
+aside {
+    margin: 10px;
+    background: white;
+    height: 245px;
+}
+
+section {
+    width: 650px;
+}
+
+aside {
+    width: 270px;
+}
+
+.logo {
+    float: left;
+    font-size: 36px;
+    width: fit-content;
+    background: teal;
+    color: white;
+    padding: 20px;
+}
+
+
+/************************
+    Position
+*************************/
+
+h3 {
+    text-align: center;
+}
+
+.ltor {
+    display: inline;
+}
+
+nav {
+    float: right;
+}
+
+section {
+    float: left;
+    margin-left: 0;
+}
+
+aside {
+    float: right;
+    margin-right: 0;
+}
+
+.clear {
+    clear: both;
+}
