@@ -104,3 +104,7 @@ aside {
 .clear {
     clear: both;
 }
+
+attrib {
+    font-size: 10px;
+}
