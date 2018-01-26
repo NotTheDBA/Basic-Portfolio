@@ -18,6 +18,7 @@ h3,
 h4,
 h5,
 h6,
+figcaption,
 .logo {
     font-family: 'Georgia', Times, 'Times New Roman', serif
 }
@@ -111,6 +112,7 @@ footer {
     border-top-style: solid;
 }
 
+figcaption,
 .logo {
     background: #4aaaa5;
     color: #ffffff;
@@ -119,6 +121,32 @@ footer {
 .ltor a {
     text-decoration: none;
     color: #777777;
+}
+
+figure,
+figure img {
+    float: left;
+    width: 300px;
+    position: relative;
+}
+
+figure img {
+    border: #777777 solid 1px;
+}
+
+figure {
+    margin: 10px;
+}
+
+figcaption {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    background: #4aaaa5;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
 }
 
 
@@ -214,7 +242,9 @@ aside h3 {
     border-bottom: 2px solid #d3d3d3;
 }
 
-article {
+section p,
+section form,
+section table {
     padding: 10px 20px;
 }
 
