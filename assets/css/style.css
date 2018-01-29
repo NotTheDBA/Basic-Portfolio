@@ -266,6 +266,19 @@ footer {
 }
 
 
+/* TODO: Switch to smaller icons once Twitter is added */
+
+.ltor img {
+    height: 60px;
+    width: 60px;
+}
+
+.ltor img:hover {
+    height: 70px;
+    width: 70px;
+}
+
+
 /************************
     Form
 *************************/
@@ -340,9 +353,3 @@ figcaption a {
 figcaption:hover {
     color: #777777;
 }
-
-
-/* 
-   TODO: 
-   - CSS hover for social icons
-*/
