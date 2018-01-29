@@ -181,7 +181,6 @@ figcaption:hover {
     border-radius: 5px;
     color: #888;
     display: block;
-    
     padding: 5px 8px; */
 }
 
@@ -215,6 +214,11 @@ figcaption:hover {
     Sizing
 *************************/
 
+html,
+body {
+    height: 100%;
+}
+
 header {
     height: 76px;
 }
@@ -228,6 +232,8 @@ section,
 section,
 aside {
     margin: 20px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -266,7 +272,11 @@ nav {
 
 nav,
 .logo {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -278,6 +288,11 @@ nav,
 /************************
     Position
 *************************/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
 
 nav {
     text-align: center;
@@ -324,10 +339,13 @@ footer {
     clear: both;
 }
 
+.content {
+    flex: 1 0 auto;
+}
+
 
 /* 
    TODO:
    - Clean up stylesheet so all elements are in proper gropus
    - CSS hover for social icons
-   - fixed footer
 */
