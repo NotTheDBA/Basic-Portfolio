@@ -23,39 +23,19 @@ figcaption,
     font-family: 'Georgia', Times, 'Times New Roman', serif
 }
 
-
-/* H-font sizes based on FireFox defaults */
-
-h1 {
-    font-size: 2em;
-}
-
 h2 {
-    font-size: 1.5em;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 h3 {
-    font-size: 1.17em;
-}
-
-h4 {
-    font-size: 1.00em;
-}
-
-h5 {
-    font-size: 0.83em;
-}
-
-h6 {
-    font-size: 0.67em;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
 }
 
 footer {
     font-size: 12px;
-}
-
-nav {
-    font-size: 20px;
 }
 
 .logo {
@@ -79,12 +59,27 @@ body {
 
 header {
     background: #ffffff;
-    /* border-bottom: 1px solid #ccc; */
+    border-bottom: #cccccc solid 2px;
+}
+
+.content {
+    background: #ffffff;
+    /* border-top: #dddddd solid 2px;
+    border-bottom: #dddddd solid 2px; */
+}
+
+hr {
+    background-color: #d3d3d3;
 }
 
 section,
 aside {
     background: #ffffff;
+}
+
+section h2,
+aside h3 {
+    border-bottom: 2px solid #d3d3d3;
 }
 
 h1,
@@ -96,8 +91,9 @@ h6 {
     color: #4aaaa5;
 }
 
+nav,
 nav a {
-    color: #666666;
+    color: #777777;
 }
 
 nav a:hover {
@@ -120,7 +116,6 @@ figcaption,
 
 .ltor a {
     text-decoration: none;
-    color: #777777;
 }
 
 figure,
@@ -147,6 +142,10 @@ figcaption {
     bottom: 20px;
     left: 0;
     right: 0;
+}
+
+figcaption:hover {
+    color: #777777;
 }
 
 
@@ -239,7 +238,6 @@ section {
 section h2,
 aside h3 {
     padding: 10px 20px;
-    border-bottom: 2px solid #d3d3d3;
 }
 
 section p,
@@ -248,17 +246,13 @@ section table {
     padding: 10px 20px;
 }
 
+nav,
 aside {
     width: 270px;
 }
 
-aside ul {
-    margin: 20px 30px;
-}
-
 hr {
     height: 1px;
-    background-color: #d3d3d3;
     width: 95%;
 }
 
@@ -266,10 +260,17 @@ footer {
     padding: 20px;
 }
 
+nav {
+    padding: 20px 0;
+}
+
 nav,
 .logo {
     height: fit-content;
     width: fit-content;
+}
+
+.logo {
     padding: 20px;
 }
 
@@ -278,12 +279,18 @@ nav,
     Position
 *************************/
 
-h3 {
+nav {
     text-align: center;
 }
 
-nav {
+nav,
+aside {
     float: right;
+    margin-right: 0;
+}
+
+nav a {
+    margin: auto 5px;
 }
 
 section {
@@ -291,9 +298,8 @@ section {
     margin-left: 0;
 }
 
-aside {
-    float: right;
-    margin-right: 0;
+aside ul {
+    margin: 20px 30px;
 }
 
 footer {
@@ -317,3 +323,11 @@ footer {
 .clear {
     clear: both;
 }
+
+
+/* 
+   TODO:
+   - Clean up stylesheet so all elements are in proper gropus
+   - CSS hover for social icons
+   - fixed footer
+*/
