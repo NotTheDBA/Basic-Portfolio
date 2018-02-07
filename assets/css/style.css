@@ -221,9 +221,11 @@ footer {
 
 .content {
     flex: 1 0 auto;
+}
+
+aside,
+section {
     background: #ffffff;
-    /* border-top: #dddddd solid 2px;
-    border-bottom: #dddddd solid 2px; */
 }
 
 
